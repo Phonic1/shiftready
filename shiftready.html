@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="color-scheme" content="light">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShiftReady — Warehouse Labour Hire | Melbourne &amp; Mornington Peninsula</title>
+  <meta name="description" content="Reliable warehouse labour hire for Melbourne's SE suburbs and Mornington Peninsula. One worker, four hours minimum, confirmed fast. Payroll and compliance handled.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://shiftready.com.au/">
+  <meta property="og:title" content="ShiftReady — Warehouse Labour Hire | Melbourne">
+  <meta property="og:description" content="Need warehouse cover? One worker, four-hour minimum, confirmed fast. Payroll, compliance and safety handled.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shiftready.com.au/">
+  <meta property="og:locale" content="en_AU">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Organization", "LocalBusiness"],
+    "name": "ShiftReady",
+    "description": "Labour hire and employer-of-record services for warehouses in Melbourne south-east and Mornington Peninsula.",
+    "url": "https://shiftready.com.au",
+    "address": { "@type": "PostalAddress", "addressLocality": "Melbourne", "addressRegion": "VIC", "addressCountry": "AU" },
+    "telephone": "+61-XXX-XXX-XXX",
+    "email": "hello@shiftready.com.au"
+  }
+  </script>
+  <style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--c-bg:#FAFAF8;--c-surface:#FFFFFF;--c-surface-alt:#F2F0EC;--c-text:#1A1A1A;--c-text-muted:#5A5A58;--c-accent:#E85D26;--c-accent-dark:#C44A1A;--c-accent-light:#FFF0EB;--c-border:#D8D6D2;--c-success:#1B8B4D;--c-error:#C0392B;--font-body:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;--font-heading:Georgia,"Times New Roman",Times,serif;--max-w:1080px;--radius:6px;--transition:0.2s ease}
+html{scroll-behavior:smooth;scroll-padding-top:72px;color-scheme:light}
+body{font-family:var(--font-body);font-size:16px;line-height:1.6;color:var(--c-text);background:var(--c-bg);background-color:#FAFAF8;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{max-width:100%;height:auto}
+a{color:var(--c-accent);text-decoration-skip-ink:auto}
+a:hover{color:var(--c-accent-dark)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+.container{width:100%;max-width:var(--max-w);margin:0 auto;padding:0 20px}
+
+/* SPLASH */
+.splash{position:fixed;inset:0;z-index:9999;background:var(--c-text);display:flex;align-items:center;justify-content:center;flex-direction:column;transition:opacity 0.5s ease,visibility 0.5s ease;cursor:pointer}
+.splash.is-done{opacity:0;visibility:hidden;pointer-events:none}
+.splash__logo{display:flex;align-items:center;gap:14px;opacity:0;transform:translateY(20px);animation:splashFadeUp 0.6s ease forwards 0.2s}
+.splash__icon{position:relative;width:52px;height:52px}
+.splash__bar{position:absolute;border-radius:4px;opacity:0}
+.splash__bar--left{left:0;bottom:0;width:22px;height:0;background:var(--c-accent);animation:barGrowLeft 0.5s ease forwards 0.5s}
+.splash__bar--right{right:0;top:0;width:22px;height:0;background:rgba(255,255,255,0.35);animation:barGrowRight 0.5s ease forwards 0.7s}
+.splash__text{font-family:var(--font-heading);font-size:2rem;font-weight:700;color:#fff;letter-spacing:-0.03em;overflow:hidden}
+.splash__text span{display:inline-block;opacity:0;transform:translateY(100%);animation:letterReveal 0.4s ease forwards}
+.splash__tagline{color:rgba(255,255,255,0.4);font-size:0.9rem;margin-top:16px;opacity:0;animation:splashFadeUp 0.5s ease forwards 1.2s;letter-spacing:0.1em;text-transform:uppercase}
+@keyframes splashFadeUp{to{opacity:1;transform:translateY(0)}}
+@keyframes barGrowLeft{0%{height:0;opacity:0}100%{height:38px;opacity:1}}
+@keyframes barGrowRight{0%{height:0;opacity:0}100%{height:48px;opacity:1}}
+@keyframes letterReveal{to{opacity:1;transform:translateY(0)}}
+
+/* SCROLL REVEAL */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity 0.6s ease,transform 0.6s ease}
+.reveal.is-visible{opacity:1;transform:translateY(0)}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 28px;border:2px solid transparent;border-radius:var(--radius);font-family:var(--font-body);font-size:1rem;font-weight:600;text-decoration:none;cursor:pointer;transition:background var(--transition),border-color var(--transition),transform var(--transition),box-shadow var(--transition);line-height:1.2}
+.btn:active{transform:scale(0.97)}
+.btn--primary{background:var(--c-accent);color:#fff;box-shadow:0 2px 8px rgba(232,93,38,0.25)}
+.btn--primary:hover{background:var(--c-accent-dark);color:#fff;box-shadow:0 4px 16px rgba(232,93,38,0.35)}
+.btn--secondary{background:transparent;color:var(--c-text);border-color:var(--c-text)}
+.btn--secondary:hover{background:var(--c-text);color:#fff}
+.btn--full{width:100%}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:100;background:rgba(250,250,248,0.95);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--c-border)}
+.nav__inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav__logo{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--c-text);font-family:var(--font-heading);font-size:1.25rem;font-weight:700;letter-spacing:-0.02em}
+.nav__toggle{display:flex;align-items:center;background:none;border:none;cursor:pointer;color:var(--c-text);padding:8px;z-index:120;position:relative}
+.nav__overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.3);z-index:105;opacity:0;transition:opacity 0.3s ease}
+.nav__overlay.is-open{display:block;opacity:1}
+.nav__menu{list-style:none;display:flex;flex-direction:column;position:fixed;top:0;right:0;bottom:0;width:280px;background:var(--c-bg);padding:80px 28px 28px;gap:4px;z-index:110;transform:translateX(100%);transition:transform 0.3s ease;box-shadow:-4px 0 24px rgba(0,0,0,0.1)}
+.nav__menu.is-open{transform:translateX(0)}
+.nav__menu a{display:block;padding:12px 0;text-decoration:none;color:var(--c-text-muted);font-size:1rem;font-weight:500;border-bottom:1px solid var(--c-border);transition:color var(--transition)}
+.nav__menu a:hover,.nav__menu a.is-active{color:var(--c-accent)}
+.nav__cta{display:inline-block;margin-top:16px;padding:12px 24px !important;background:var(--c-accent);color:#fff !important;border-radius:var(--radius);text-align:center;font-weight:600 !important;border-bottom:none !important}
+.nav__cta:hover{background:var(--c-accent-dark);color:#fff !important}
+@media(min-width:768px){
+  .nav__toggle,.nav__overlay{display:none !important}
+  .nav__menu{display:flex;flex-direction:row;position:static;width:auto;background:none;padding:0;align-items:center;gap:4px;transform:none;box-shadow:none}
+  .nav__menu a{padding:6px 12px;font-size:0.9rem;border-bottom:none;border-radius:var(--radius)}
+  .nav__menu a.is-active{background:var(--c-accent-light);color:var(--c-accent)}
+  .nav__cta{margin-top:0;padding:8px 18px !important}
+}
+
+/* HERO */
+.hero{padding:80px 0 48px;background:var(--c-bg)}
+.hero__inner{display:grid;gap:40px;align-items:center}
+.hero__eyebrow{font-size:0.8rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--c-accent);margin-bottom:12px}
+.hero__title{font-family:var(--font-heading);font-size:clamp(2.2rem,5vw,3.5rem);font-weight:700;line-height:1.1;letter-spacing:-0.03em;color:var(--c-text);margin-bottom:16px}
+.hero__sub{font-size:1.125rem;color:var(--c-text-muted);max-width:480px;margin-bottom:28px;line-height:1.7}
+.hero__ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px}
+.hero__pilot{display:flex;align-items:flex-start;gap:10px;font-size:0.9rem;color:var(--c-text-muted);padding:14px 18px;background:var(--c-accent-light);border-radius:var(--radius);border-left:3px solid var(--c-accent);max-width:460px;line-height:1.5}
+.hero__pilot svg{flex-shrink:0;margin-top:2px}
+.hero__graphic{display:none}
+.hero__svg{width:100%;max-width:320px}
+@media(min-width:768px){
+  .hero{padding:100px 0 64px}
+  .hero__inner{grid-template-columns:1fr 1fr;gap:60px}
+  .hero__graphic{display:flex;justify-content:center}
+}
+
+/* STATS */
+.stats{border-top:1px solid var(--c-border);border-bottom:1px solid var(--c-border);background:var(--c-surface);padding:32px 0}
+.stats__inner{display:grid;grid-template-columns:1fr;gap:24px;text-align:center}
+.stat__value{font-family:var(--font-heading);font-size:2rem;font-weight:700;color:var(--c-accent);line-height:1;margin-bottom:4px}
+.stat__label{font-size:0.85rem;color:var(--c-text-muted);font-weight:500}
+@media(min-width:600px){
+  .stats__inner{grid-template-columns:repeat(3,1fr)}
+  .stats__item:not(:last-child){border-right:1px solid var(--c-border)}
+}
+
+/* SECTIONS */
+.section{padding:64px 0}
+.section--alt{background:var(--c-surface-alt)}
+.section__title{font-family:var(--font-heading);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;letter-spacing:-0.02em;margin-bottom:8px}
+.section__sub{color:var(--c-text-muted);max-width:600px;margin-bottom:36px;line-height:1.7}
+
+/* TABS */
+.tabs{display:inline-flex;gap:4px;background:var(--c-surface-alt);padding:4px;border-radius:var(--radius);margin-bottom:32px}
+.section--alt .tabs{background:var(--c-border)}
+.tab{padding:10px 20px;background:transparent;border:none;border-radius:calc(var(--radius) - 2px);font-family:var(--font-body);font-size:0.9rem;font-weight:600;color:var(--c-text-muted);cursor:pointer;transition:background var(--transition),color var(--transition)}
+.tab--active,.tab:hover{background:var(--c-surface);color:var(--c-text)}
+.tab--active{box-shadow:0 1px 3px rgba(0,0,0,0.08)}
+.tab-panel{display:none}
+.tab-panel--active{display:block}
+
+/* STEPS */
+.steps{list-style:none;display:grid;gap:24px}
+.step{display:flex;gap:20px;align-items:flex-start;padding:20px;border-radius:var(--radius);transition:background var(--transition)}
+.step:hover{background:rgba(0,0,0,0.02)}
+.step__num{flex-shrink:0;display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--c-accent);color:#fff;font-weight:700;font-size:1rem}
+.step__title{font-size:1rem;font-weight:700;margin-bottom:4px}
+.step p{color:var(--c-text-muted);font-size:0.95rem}
+@media(min-width:768px){.steps{grid-template-columns:1fr 1fr;gap:16px}}
+
+/* PRODUCT */
+.product-grid{display:grid;gap:20px}
+.product-card{background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--radius);padding:28px 24px;transition:border-color var(--transition),box-shadow var(--transition)}
+.product-card:hover{border-color:var(--c-accent);box-shadow:0 4px 16px rgba(232,93,38,0.08)}
+.product-card__icon{margin-bottom:16px}
+.product-card h3{font-size:1.05rem;font-weight:700;margin-bottom:8px}
+.product-card p{color:var(--c-text-muted);font-size:0.95rem}
+@media(min-width:600px){.product-grid{grid-template-columns:1fr 1fr}}
+
+/* TRUST */
+.trust-grid{display:grid;gap:28px}
+.trust-item{display:flex;gap:16px;align-items:flex-start}
+.trust-item svg{flex-shrink:0;margin-top:2px}
+.trust-item h3{font-size:1rem;font-weight:700;margin-bottom:4px}
+.trust-item p{color:var(--c-text-muted);font-size:0.95rem}
+@media(min-width:600px){.trust-grid{grid-template-columns:1fr 1fr}}
+
+/* COVERAGE */
+.coverage-check{max-width:440px}
+.coverage-check__label{display:block;font-weight:600;margin-bottom:8px}
+.coverage-check__select{width:100%;padding:12px 16px;border:1px solid var(--c-border);border-radius:var(--radius);font-family:var(--font-body);font-size:1rem;background:var(--c-surface);color:var(--c-text);appearance:none;background-image:url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%235A5A58' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;cursor:pointer}
+.coverage-check__result{margin-top:12px;padding:12px 16px;border-radius:var(--radius);font-size:0.95rem;font-weight:500;display:none}
+.coverage-check__result.is-visible{display:block}
+.coverage-check__result--yes{background:#E8F5E9;color:#1B8B4D;border:1px solid #A5D6A7}
+.coverage-check__result--partial{background:#FFF8E1;color:#8D6E00;border:1px solid #FFE082}
+.coverage-check__result--no{background:#FFF0EB;color:#C44A1A;border:1px solid #FFCCBC}
+
+/* FAQ */
+.faq-list{max-width:680px}
+.faq-item{border-bottom:1px solid var(--c-border)}
+.faq-item:first-child{border-top:1px solid var(--c-border)}
+.faq-q{display:flex;width:100%;justify-content:space-between;align-items:center;padding:18px 0;background:none;border:none;font-family:var(--font-body);font-size:1rem;font-weight:600;color:var(--c-text);cursor:pointer;text-align:left;gap:16px}
+.faq-q::after{content:'+';font-size:1.3rem;font-weight:400;color:var(--c-accent);flex-shrink:0;transition:transform var(--transition)}
+.faq-q[aria-expanded="true"]::after{content:'\2212'}
+.faq-a{padding:0 0 18px;color:var(--c-text-muted);font-size:0.95rem;line-height:1.6}
+.faq-a a{font-weight:500}
+
+/* FORMS */
+.form{background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--radius);padding:32px 24px;max-width:640px}
+.form__heading{font-family:var(--font-heading);font-size:1.25rem;margin-bottom:24px}
+.form__row{display:grid;gap:16px;margin-bottom:16px}
+@media(min-width:500px){.form__row{grid-template-columns:1fr 1fr}}
+.form__field{display:flex;flex-direction:column}
+.form__field--full{margin-bottom:16px}
+.form__field label{font-size:0.9rem;font-weight:600;margin-bottom:6px;color:var(--c-text)}
+.form__field label span{color:var(--c-accent)}
+.form__field input,.form__field select,.form__field textarea{padding:10px 14px;border:1px solid var(--c-border);border-radius:var(--radius);font-family:var(--font-body);font-size:1rem;color:var(--c-text);background:var(--c-bg);transition:border-color var(--transition),box-shadow var(--transition)}
+.form__field input:focus,.form__field select:focus,.form__field textarea:focus{outline:none;border-color:var(--c-accent);box-shadow:0 0 0 3px rgba(232,93,38,0.15)}
+.form__field input.is-invalid,.form__field select.is-invalid{border-color:var(--c-error);box-shadow:0 0 0 3px rgba(192,57,43,0.1)}
+.form__field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%235A5A58' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:40px}
+.form__field textarea{resize:vertical}
+.form__fieldset{border:1px solid var(--c-border);border-radius:var(--radius);padding:16px 20px;margin-bottom:16px}
+.form__fieldset legend{font-size:0.9rem;font-weight:600;padding:0 6px}
+.form__checks{display:flex;flex-wrap:wrap;gap:16px;margin-top:8px}
+.form__check{display:flex;align-items:center;gap:8px;font-size:0.95rem;cursor:pointer}
+.form__check input[type="checkbox"]{width:18px;height:18px;accent-color:var(--c-accent);cursor:pointer}
+.form .btn{margin-top:8px}
+.form__fine{margin-top:12px;font-size:0.8rem;color:var(--c-text-muted)}
+.form__disclaimer{margin-top:32px;font-size:0.8rem;color:var(--c-text-muted);max-width:640px;padding:16px;background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--radius)}
+
+/* FOOTER */
+.footer{background:var(--c-text);color:rgba(255,255,255,0.7);padding:48px 0;font-size:0.9rem}
+.footer__inner{display:grid;gap:24px}
+.footer__brand{display:flex;align-items:center;gap:8px;font-family:var(--font-heading);font-size:1.15rem;font-weight:700;color:#fff}
+.footer__info p{margin-bottom:4px}
+.footer__info a{color:rgba(255,255,255,0.7)}
+.footer__info a:hover{color:#fff}
+.footer__legal p{margin-bottom:8px;font-size:0.8rem;color:rgba(255,255,255,0.45)}
+.footer__legal a{color:rgba(255,255,255,0.5)}
+.footer__legal a:hover{color:#fff}
+@media(min-width:768px){.footer__inner{grid-template-columns:1fr 1fr 1.5fr;gap:40px}}
+
+/* MOBILE STICKY CTA */
+.mobile-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:90;background:var(--c-surface);border-top:1px solid var(--c-border);padding:12px 20px;box-shadow:0 -4px 16px rgba(0,0,0,0.08);gap:10px;transform:translateY(100%);transition:transform 0.3s ease}
+.mobile-cta.is-visible{display:flex;transform:translateY(0)}
+.mobile-cta .btn{flex:1;padding:12px 16px;font-size:0.9rem}
+@media(min-width:768px){.mobile-cta{display:none !important}}
+
+/* BACK TO TOP */
+.back-top{position:fixed;bottom:80px;right:20px;z-index:80;width:44px;height:44px;border-radius:50%;background:var(--c-text);color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,0.2);opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity 0.3s ease,visibility 0.3s ease,transform 0.3s ease,background 0.2s ease}
+.back-top.is-visible{opacity:1;visibility:visible;transform:translateY(0)}
+.back-top:hover{background:var(--c-accent)}
+@media(min-width:768px){.back-top{bottom:32px;right:32px}}
+
+/* TOAST */
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--c-text);color:#fff;padding:14px 48px 14px 20px;border-radius:var(--radius);font-size:0.95rem;font-weight:500;box-shadow:0 8px 24px rgba(0,0,0,0.2);z-index:200;max-width:calc(100vw - 40px)}
+.toast__close{position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;color:rgba(255,255,255,0.6);font-size:1.2rem;cursor:pointer;padding:4px 8px}
+.toast__close:hover{color:#fff}
+
+@media(max-width:767px){.hero__ctas .btn{width:100%}}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:0.01ms !important;transition-duration:0.01ms !important}
+  .splash{display:none}
+  .reveal{opacity:1;transform:none}
+}
+@media print{.nav,.toast,.mobile-cta,.back-top,.splash{display:none !important}body{background:#fff}.section--alt{background:#fff}}
+  </style>
+</head>
+<body>
+
+  <!-- SPLASH -->
+  <div class="splash" id="splash" aria-hidden="true">
+    <div class="splash__logo">
+      <div class="splash__icon">
+        <div class="splash__bar splash__bar--left"></div>
+        <div class="splash__bar splash__bar--right"></div>
+      </div>
+      <div class="splash__text" id="splashText"></div>
+    </div>
+    <p class="splash__tagline">Labour hire &middot; Melbourne</p>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner container">
+      <a href="#hero" class="nav__logo" aria-label="ShiftReady home">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="2" y="8" width="10" height="18" rx="2" fill="#E85D26"/><rect x="16" y="2" width="10" height="24" rx="2" fill="#1A1A1A"/></svg>
+        <span>ShiftReady</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <div class="nav__overlay" id="navOverlay"></div>
+      <ul class="nav__menu" id="navMenu" role="menubar">
+        <li><a href="#how-it-works" role="menuitem">How it works</a></li>
+        <li><a href="#product" role="menuitem">4-Hour Cover</a></li>
+        <li><a href="#trust" role="menuitem">Compliance</a></li>
+        <li><a href="#coverage" role="menuitem">Coverage</a></li>
+        <li><a href="#faq" role="menuitem">FAQ</a></li>
+        <li><a href="#contact" class="nav__cta" role="menuitem">Get started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Labour hire &amp; employer-of-record &middot; Melbourne SE &amp; Mornington Peninsula</p>
+        <h1 class="hero__title">Warehouse cover,<br>confirmed fast.</h1>
+        <p class="hero__sub">One worker. Four-hour minimum. Payroll, compliance and safety handled&nbsp;&mdash;&nbsp;so&nbsp;you&nbsp;don't have&nbsp;to.</p>
+        <div class="hero__ctas">
+          <a href="#employer-form" class="btn btn--primary">Hire staff</a>
+          <a href="#worker-form" class="btn btn--secondary">Work shifts</a>
+        </div>
+        <p class="hero__pilot">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#E85D26" stroke-width="2"/><path d="M5 8l2 2 4-4" stroke="#E85D26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Now enrolling <strong>Founding Partner Pilot</strong>&nbsp;&mdash; 2&ndash;4 week trial, priority support, no lock-in.
+        </p>
+      </div>
+      <div class="hero__graphic" aria-hidden="true">
+        <svg viewBox="0 0 320 280" fill="none" class="hero__svg">
+          <rect x="40" y="80" width="240" height="160" rx="4" fill="#1A1A1A" opacity="0.07"/>
+          <polygon points="160,30 40,80 280,80" fill="#E85D26" opacity="0.12"/>
+          <rect x="70" y="110" width="60" height="8" rx="2" fill="#E85D26" opacity="0.35"/>
+          <rect x="70" y="140" width="60" height="8" rx="2" fill="#E85D26" opacity="0.25"/>
+          <rect x="70" y="170" width="60" height="8" rx="2" fill="#E85D26" opacity="0.18"/>
+          <rect x="190" y="110" width="60" height="8" rx="2" fill="#1A1A1A" opacity="0.15"/>
+          <rect x="190" y="140" width="60" height="8" rx="2" fill="#1A1A1A" opacity="0.12"/>
+          <rect x="190" y="170" width="60" height="8" rx="2" fill="#1A1A1A" opacity="0.08"/>
+          <circle cx="160" cy="155" r="14" fill="#E85D26" opacity="0.6"/>
+          <rect x="152" y="172" width="16" height="40" rx="4" fill="#E85D26" opacity="0.4"/>
+          <circle cx="260" cy="60" r="24" fill="#E85D26"/>
+          <text x="260" y="65" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">4h</text>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <!-- STATS BAR -->
+  <div class="stats reveal">
+    <div class="container stats__inner">
+      <div class="stats__item"><div class="stat__value">4h</div><div class="stat__label">Minimum shift</div></div>
+      <div class="stats__item"><div class="stat__value">~12h</div><div class="stat__label">Target confirmation time</div></div>
+      <div class="stats__item"><div class="stat__value">1</div><div class="stat__label">Invoice &mdash; all-in</div></div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section__title">How it works</h2>
+        <div class="tabs" role="tablist" aria-label="Select your perspective">
+          <button class="tab tab--active" role="tab" id="tab-employer" aria-selected="true" aria-controls="panel-employer" data-tab="employer">For employers</button>
+          <button class="tab" role="tab" id="tab-worker" aria-selected="false" aria-controls="panel-worker" data-tab="worker">For workers</button>
+        </div>
+      </div>
+      <div class="tab-panel tab-panel--active" id="panel-employer" role="tabpanel" aria-labelledby="tab-employer">
+        <ol class="steps reveal">
+          <li class="step"><span class="step__num">1</span><div><h3 class="step__title">Submit a request</h3><p>Tell us the role, date, start time and site suburb. Takes under two minutes.</p></div></li>
+          <li class="step"><span class="step__num">2</span><div><h3 class="step__title">We confirm your worker</h3><p>We match, vet and confirm a worker &mdash; targeting confirmation within 12&nbsp;hours of your request.</p></div></li>
+          <li class="step"><span class="step__num">3</span><div><h3 class="step__title">Worker shows up, ready</h3><p>Inducted, insured and equipped. We handle payroll, super and WorkCover.</p></div></li>
+          <li class="step"><span class="step__num">4</span><div><h3 class="step__title">You get one invoice</h3><p>Simple billing. No hidden admin. No payroll headaches.</p></div></li>
+        </ol>
+      </div>
+      <div class="tab-panel" id="panel-worker" role="tabpanel" aria-labelledby="tab-worker" hidden>
+        <ol class="steps reveal">
+          <li class="step"><span class="step__num">1</span><div><h3 class="step__title">Register your interest</h3><p>Fill out a short form &mdash; availability, licences and location. No commitment.</p></div></li>
+          <li class="step"><span class="step__num">2</span><div><h3 class="step__title">We verify your details</h3><p>Quick check on work rights, safety gear and any relevant licences.</p></div></li>
+          <li class="step"><span class="step__num">3</span><div><h3 class="step__title">Get offered shifts</h3><p>Shifts that match your availability and location &mdash; accept what suits you.</p></div></li>
+          <li class="step"><span class="step__num">4</span><div><h3 class="step__title">Work and get paid</h3><p>Clear pay rates, on-time payment, super included. We're your employer &mdash; we look after the paperwork.</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4-HOUR WAREHOUSE COVER -->
+  <section class="section section--alt" id="product">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section__title">4-Hour Warehouse Cover</h2>
+        <p class="section__sub">Our launch product &mdash; designed for 3PL warehouses that need reliable, short-notice cover without the admin burden.</p>
+      </div>
+      <div class="product-grid reveal">
+        <div class="product-card">
+          <div class="product-card__icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="#E85D26" stroke-width="2"/><path d="M16 8v8l5 3" stroke="#E85D26" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h3>~24h lead time</h3>
+          <p>Request today, worker confirmed targeting within 12&nbsp;hours. Subject to availability.</p>
+        </div>
+        <div class="product-card">
+          <div class="product-card__icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="10" width="24" height="16" rx="2" stroke="#E85D26" stroke-width="2"/><path d="M4 14h24M10 10V6M22 10V6" stroke="#E85D26" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h3>4-hour minimum</h3>
+          <p>Flexible shift blocks from 4 hours up. Enough to cover a peak, a gap or a no-show.</p>
+        </div>
+        <div class="product-card">
+          <div class="product-card__icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4v4M16 24v4M4 16h4M24 16h4" stroke="#E85D26" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="16" r="6" stroke="#E85D26" stroke-width="2"/></svg></div>
+          <h3>Roles covered</h3>
+          <p>Pick &amp; pack, dispatch, forklift (licensed), and delivery drivers.</p>
+        </div>
+        <div class="product-card">
+          <div class="product-card__icon" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M8 16l5 5 11-11" stroke="#E85D26" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="3" width="26" height="26" rx="4" stroke="#E85D26" stroke-width="2"/></svg></div>
+          <h3>All-in pricing</h3>
+          <p>One hourly rate covers wages, super, WorkCover and our service. <a href="#employer-form">Get&nbsp;a&nbsp;quote</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPLIANCE & TRUST -->
+  <section class="section" id="trust">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section__title">Compliance &amp; trust</h2>
+        <p class="section__sub">We're a labour-hire and employer-of-record business. That means we employ the worker, handle their pay and manage the obligations &mdash; so you can focus on operations.</p>
+      </div>
+      <div class="trust-grid reveal">
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" stroke="#E85D26" stroke-width="2"/></svg>
+          <div><h3>Labour hire licensing</h3><p>We operate in accordance with Victorian labour-hire licensing requirements. Licence details available on request.</p></div>
+        </div>
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#E85D26" stroke-width="2"/><path d="M3 9h18" stroke="#E85D26" stroke-width="2"/></svg>
+          <div><h3>Payroll &amp; super</h3><p>Workers are paid correctly and on time. Superannuation is remitted as required by law.</p></div>
+        </div>
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#E85D26" stroke-width="2"/><path d="M9 12l2 2 4-4" stroke="#E85D26" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>Insurance &amp; WorkCover</h3><p>Workers are covered under our WorkCover policy. Public liability insurance details available on request.</p></div>
+        </div>
+        <div class="trust-item">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z" stroke="#E85D26" stroke-width="2"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="#E85D26" stroke-width="2" stroke-linecap="round"/></svg>
+          <div><h3>Safety coordination</h3><p>We coordinate site inductions and confirm PPE requirements before each shift. Workers arrive prepared.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COVERAGE -->
+  <section class="section section--alt" id="coverage">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section__title">Coverage area</h2>
+        <p class="section__sub">We're starting focused &mdash; south-east Melbourne and the Mornington Peninsula &mdash; so we can guarantee speed and reliability before we expand.</p>
+      </div>
+      <div class="coverage-check reveal">
+        <label for="coverageSelect" class="coverage-check__label">Check your area:</label>
+        <select id="coverageSelect" class="coverage-check__select">
+          <option value="">Select your area&hellip;</option>
+          <option value="yes">Mornington Peninsula</option>
+          <option value="yes">Frankston / Carrum Downs</option>
+          <option value="yes">Dandenong / Dandenong South</option>
+          <option value="yes">Cranbourne / Clyde</option>
+          <option value="yes">Moorabbin / Braeside</option>
+          <option value="yes">Keysborough / Noble Park</option>
+          <option value="partial">Other SE Melbourne suburb</option>
+          <option value="no">Elsewhere in Melbourne</option>
+          <option value="no">Outside Melbourne</option>
+        </select>
+        <div id="coverageResult" class="coverage-check__result" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section__title">Frequently asked questions</h2>
+        <div class="tabs" role="tablist" aria-label="FAQ audience">
+          <button class="tab tab--active" role="tab" id="tab-faq-emp" aria-selected="true" aria-controls="panel-faq-emp" data-tab="faq-emp">Employers</button>
+          <button class="tab" role="tab" id="tab-faq-wrk" aria-selected="false" aria-controls="panel-faq-wrk" data-tab="faq-wrk">Workers</button>
+        </div>
+      </div>
+      <div class="tab-panel tab-panel--active" id="panel-faq-emp" role="tabpanel" aria-labelledby="tab-faq-emp">
+        <dl class="faq-list reveal">
+          <div class="faq-item"><dt><button class="faq-q" aria-expanded="false">How quickly can you fill a shift?</button></dt><dd class="faq-a" hidden>We target confirmation within 12 hours of your request, with at least ~24 hours' lead time before the shift. Availability is subject to our current worker pool and location.</dd></div>
+          <div class="faq-item"><dt><button class="faq-q" aria-expanded="false">What does your pricing include?</button></dt><dd class="faq-a" hidden>Our all-in hourly rate covers the worker's wages, superannuation, WorkCover and our service margin. No hidden costs. <a href="#employer-form">Get a quote</a> for your specific requirements.</dd></div>
+          <div class="faq-item"><dt><button class="faq-q" aria-expanded="false">What's the minimum booking?</button></dt><dd class="faq-a" hidden>Four hours. You can book longer shifts too &mdash; just let us know what you need in the request form.</dd></div>
+          <div class="faq-item"><dt><button class="faq-q" aria-expanded="false">What's the Founding Partner Pilot?</button></dt><dd class="faq-a" hidden>It's a 2&ndash;4 week trial for early customers. You get priority matching, a direct line to our team and a chance to shape the service. No lock-in contracts.</dd></div>
+          <div class="faq-item"><dt><button class="faq-q" aria-expanded="false">Are your workers insured?</button></dt><dd class="faq-a" hidden>Yes. Workers are employed by us and covered under our WorkCover policy. We also carry public liability insurance. Details available on request.</dd></div>
+          <div class="faq-item"><dt><button class="faq-q" aria-expanded="false">Can I request the same worker again?</button></dt><dd class="faq-a" hidden>Absolutely. If a worker performs well, let us know and we'll prioritise them for your future shifts, subject to their availability.</dd></div>
+        </dl>
+      </div>
+      <div class="tab-panel" id="panel-faq-wrk" role="tabpanel" aria-labelledby="tab-faq-wrk" hidden>
+        <dl class="faq-list reveal">
+          <div class="faq-item"><dt><button class="faq-q" aria-expanded="false">Who is my employer?</button></dt><dd class="faq-a" hidden>We are. ShiftReady employs you directly and handles payroll, superannuation and WorkCover. You work at our client sites, but we're responsible for your pay and entitlements.</dd></div>
+          <div class="faq-item"><dt><button class="faq-q" aria-expanded="false">How do I get paid?</button></dt><dd class="faq-a" hidden>You'll be paid for hours worked, with super on top, into your nominated bank account. Pay frequency and rates are confirmed when you're engaged.</dd></div>
+          <div class="faq-item"><dt><button class="faq-q" aria-expanded="false">Do I need a forklift licence?</button></dt><dd class="faq-a" hidden>Only for forklift roles. We also have pick/pack and dispatch shifts that don't require a licence. Let us know what you have and we'll match you accordingly.</dd></div>
+          <div class="faq-item"><dt><button class="faq-q" aria-expanded="false">Do I need my own PPE?</button></dt><dd class="faq-a" hidden>Steel-cap boots are generally required and you'll need to supply your own. Hi-vis and other site-specific PPE requirements vary &mdash; we'll confirm before each shift.</dd></div>
+          <div class="faq-item"><dt><button class="faq-q" aria-expanded="false">Can I choose which shifts I take?</button></dt><dd class="faq-a" hidden>Yes. You set your availability and we offer shifts that fit. There's no obligation to accept every offer.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FORMS -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section__title">Get started</h2>
+        <p class="section__sub">Whether you need staff or want to pick up shifts &mdash; start here.</p>
+        <div class="tabs tabs--forms" role="tablist" aria-label="Select form">
+          <button class="tab tab--active" role="tab" id="tab-form-emp" aria-selected="true" aria-controls="employer-form" data-tab="form-emp">Hire staff</button>
+          <button class="tab" role="tab" id="tab-form-wrk" aria-selected="false" aria-controls="worker-form" data-tab="form-wrk">Work shifts</button>
+        </div>
+      </div>
+
+      <div class="tab-panel tab-panel--active" id="employer-form" role="tabpanel" aria-labelledby="tab-form-emp">
+        <form name="employer-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form reveal" novalidate>
+          <input type="hidden" name="form-name" value="employer-request">
+          <p class="sr-only"><label>Don't fill this out: <input name="bot-field"></label></p>
+          <h3 class="form__heading">Request a worker</h3>
+          <div class="form__row"><div class="form__field"><label for="emp-company">Company name <span aria-hidden="true">*</span></label><input type="text" id="emp-company" name="company" required autocomplete="organization"></div><div class="form__field"><label for="emp-contact">Contact name <span aria-hidden="true">*</span></label><input type="text" id="emp-contact" name="contact" required autocomplete="name"></div></div>
+          <div class="form__row"><div class="form__field"><label for="emp-phone">Phone <span aria-hidden="true">*</span></label><input type="tel" id="emp-phone" name="phone" required autocomplete="tel"></div><div class="form__field"><label for="emp-email">Email <span aria-hidden="true">*</span></label><input type="email" id="emp-email" name="email" required autocomplete="email"></div></div>
+          <div class="form__row"><div class="form__field"><label for="emp-suburb">Site suburb / postcode <span aria-hidden="true">*</span></label><input type="text" id="emp-suburb" name="suburb" required></div><div class="form__field"><label for="emp-role">Role needed <span aria-hidden="true">*</span></label><select id="emp-role" name="role" required><option value="">Select&hellip;</option><option value="pick-pack">Pick &amp; pack</option><option value="dispatch">Dispatch</option><option value="forklift">Forklift (licensed)</option><option value="delivery">Delivery driver</option></select></div></div>
+          <div class="form__row"><div class="form__field"><label for="emp-date">Date needed <span aria-hidden="true">*</span></label><input type="date" id="emp-date" name="date" required></div><div class="form__field"><label for="emp-start">Start time <span aria-hidden="true">*</span></label><input type="time" id="emp-start" name="start-time" required></div></div>
+          <div class="form__row"><div class="form__field"><label for="emp-duration">Duration (hours)</label><select id="emp-duration" name="duration"><option value="4" selected>4 hours (minimum)</option><option value="6">6 hours</option><option value="8">8 hours</option><option value="10">10 hours</option><option value="other">Other &mdash; specify in notes</option></select></div></div>
+          <div class="form__field form__field--full"><label for="emp-notes">Notes (optional)</label><textarea id="emp-notes" name="notes" rows="3" placeholder="e.g. forklift type, parking info, site contact&hellip;"></textarea></div>
+          <button type="submit" class="btn btn--primary btn--full">Submit request</button>
+          <p class="form__fine">Subject to eligibility and availability. We'll aim to respond within a few hours during business hours.</p>
+        </form>
+      </div>
+
+      <div class="tab-panel" id="worker-form" role="tabpanel" aria-labelledby="tab-form-wrk" hidden>
+        <form name="worker-interest" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form reveal" novalidate>
+          <input type="hidden" name="form-name" value="worker-interest">
+          <p class="sr-only"><label>Don't fill this out: <input name="bot-field"></label></p>
+          <h3 class="form__heading">Register your interest</h3>
+          <div class="form__row"><div class="form__field"><label for="wrk-name">Full name <span aria-hidden="true">*</span></label><input type="text" id="wrk-name" name="full-name" required autocomplete="name"></div><div class="form__field"><label for="wrk-phone">Phone <span aria-hidden="true">*</span></label><input type="tel" id="wrk-phone" name="phone" required autocomplete="tel"></div></div>
+          <div class="form__row"><div class="form__field"><label for="wrk-email">Email <span aria-hidden="true">*</span></label><input type="email" id="wrk-email" name="email" required autocomplete="email"></div><div class="form__field"><label for="wrk-suburb">Suburb / postcode <span aria-hidden="true">*</span></label><input type="text" id="wrk-suburb" name="suburb" required></div></div>
+          <div class="form__row"><div class="form__field"><label for="wrk-avail">Availability <span aria-hidden="true">*</span></label><select id="wrk-avail" name="availability" required><option value="">Select&hellip;</option><option value="weekdays">Weekdays</option><option value="weekends">Weekends</option><option value="both">Both weekdays &amp; weekends</option></select></div><div class="form__field"><label for="wrk-shift">Preferred shift length</label><select id="wrk-shift" name="shift-length"><option value="4">4 hours</option><option value="6" selected>6 hours</option><option value="8">8 hours</option><option value="flexible">Flexible</option></select></div></div>
+          <fieldset class="form__fieldset"><legend>Licences &amp; equipment</legend><div class="form__checks"><label class="form__check"><input type="checkbox" name="forklift" value="yes"> Forklift licence</label><label class="form__check"><input type="checkbox" name="driver-licence-car" value="yes"> Driver licence + own car</label><label class="form__check"><input type="checkbox" name="steel-caps" value="yes"> Steel-cap boots</label></div></fieldset>
+          <div class="form__field form__field--full"><label for="wrk-rights">Work rights in Australia <span aria-hidden="true">*</span></label><select id="wrk-rights" name="work-rights" required><option value="">Select&hellip;</option><option value="yes">Yes &mdash; Australian citizen or permanent resident</option><option value="visa">Yes &mdash; valid work visa</option><option value="discuss">Need to discuss</option></select></div>
+          <div class="form__field form__field--full"><label for="wrk-notes">Notes (optional)</label><textarea id="wrk-notes" name="notes" rows="3" placeholder="e.g. relevant experience, preferred areas, any questions&hellip;"></textarea></div>
+          <button type="submit" class="btn btn--primary btn--full">Submit interest</button>
+          <p class="form__fine">Submitting this form does not guarantee work. We'll review your details and be in touch if there's a match.</p>
+        </form>
+      </div>
+
+      <p class="form__disclaimer">This site is not legal advice. All services are subject to eligibility and availability. Licensing and insurance information available on request.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="2" y="8" width="10" height="18" rx="2" fill="#E85D26"/><rect x="16" y="2" width="10" height="24" rx="2" fill="#fff" opacity="0.4"/></svg>
+        <span>ShiftReady</span>
+      </div>
+      <div class="footer__info">
+        <p>ABN: XX XXX XXX XXX</p>
+        <p>Melbourne, VIC, Australia</p>
+        <p><a href="mailto:hello@shiftready.com.au">hello@shiftready.com.au</a></p>
+      </div>
+      <div class="footer__legal">
+        <p>&copy; <span id="footerYear"></span> ShiftReady. All rights reserved.</p>
+        <p>This website does not constitute legal, financial or employment advice. All services subject to eligibility and availability. Labour hire licensing and insurance information available on request.</p>
+        <p><a href="#">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY CTA -->
+  <div class="mobile-cta" id="mobileCta">
+    <a href="#employer-form" class="btn btn--primary">Hire staff</a>
+    <a href="#worker-form" class="btn btn--secondary">Work shifts</a>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 16V4M4 10l6-6 6 6"/></svg>
+  </button>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast" role="alert" aria-live="assertive" hidden>
+    <p id="toastMsg">Thanks.</p>
+    <button class="toast__close" aria-label="Dismiss">&times;</button>
+  </div>
+
+  <script>
+(function(){
+  'use strict';
+
+  // SPLASH ANIMATION
+  var splash=document.getElementById('splash'),splashText=document.getElementById('splashText');
+  if(splash&&splashText){
+    'ShiftReady'.split('').forEach(function(c,i){
+      var s=document.createElement('span');s.textContent=c;
+      s.style.animationDelay=(0.6+i*0.05)+'s';splashText.appendChild(s);
+    });
+    setTimeout(function(){splash.classList.add('is-done')},2400);
+    splash.addEventListener('click',function(){splash.classList.add('is-done')});
+  }
+
+  // FOOTER YEAR
+  var y=document.getElementById('footerYear');if(y)y.textContent=new Date().getFullYear();
+
+  // MOBILE NAV
+  var navToggle=document.getElementById('navToggle'),navMenu=document.getElementById('navMenu'),navOverlay=document.getElementById('navOverlay');
+  function closeNav(){navMenu.classList.remove('is-open');navOverlay.classList.remove('is-open');navToggle.setAttribute('aria-expanded','false');document.body.style.overflow=''}
+  function openNav(){navMenu.classList.add('is-open');navOverlay.classList.add('is-open');navToggle.setAttribute('aria-expanded','true');document.body.style.overflow='hidden'}
+  if(navToggle&&navMenu){
+    navToggle.addEventListener('click',function(){navMenu.classList.contains('is-open')?closeNav():openNav()});
+    if(navOverlay)navOverlay.addEventListener('click',closeNav);
+    navMenu.querySelectorAll('a').forEach(function(l){l.addEventListener('click',closeNav)});
+  }
+
+  // ACTIVE NAV
+  var sections=document.querySelectorAll('section[id],header[id]'),navLinks=document.querySelectorAll('.nav__menu a:not(.nav__cta)');
+  function updateActiveNav(){
+    var sp=window.scrollY+100;
+    sections.forEach(function(sec){
+      var t=sec.offsetTop,b=t+sec.offsetHeight,id=sec.getAttribute('id');
+      if(sp>=t&&sp<b)navLinks.forEach(function(l){l.classList.remove('is-active');if(l.getAttribute('href')==='#'+id)l.classList.add('is-active')});
+    });
+  }
+
+  // SCROLL REVEAL
+  var revealEls=document.querySelectorAll('.reveal');
+  function checkReveal(){
+    var wb=window.scrollY+window.innerHeight;
+    revealEls.forEach(function(el){if(wb>el.getBoundingClientRect().top+window.scrollY+60)el.classList.add('is-visible')});
+  }
+
+  // MOBILE CTA
+  var mobileCta=document.getElementById('mobileCta'),heroSec=document.getElementById('hero'),contactSec=document.getElementById('contact');
+  function checkMobileCta(){
+    if(window.innerWidth>=768){if(mobileCta)mobileCta.classList.remove('is-visible');return}
+    if(!heroSec||!contactSec||!mobileCta)return;
+    var hb=heroSec.getBoundingClientRect().bottom,ct=contactSec.getBoundingClientRect().top;
+    if(hb<0&&ct>window.innerHeight)mobileCta.classList.add('is-visible');else mobileCta.classList.remove('is-visible');
+  }
+
+  // BACK TO TOP
+  var backTop=document.getElementById('backTop');
+  function checkBackTop(){if(!backTop)return;if(window.scrollY>600)backTop.classList.add('is-visible');else backTop.classList.remove('is-visible')}
+  if(backTop)backTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+
+  // SCROLL HANDLER
+  var st;window.addEventListener('scroll',function(){if(st)cancelAnimationFrame(st);st=requestAnimationFrame(function(){updateActiveNav();checkReveal();checkMobileCta();checkBackTop()})},{passive:true});
+  checkReveal();checkMobileCta();
+
+  // TABS
+  document.querySelectorAll('[role="tablist"]').forEach(function(tl){
+    var tabs=tl.querySelectorAll('[role="tab"]');
+    tabs.forEach(function(tab){tab.addEventListener('click',function(){
+      tabs.forEach(function(t){t.classList.remove('tab--active');t.setAttribute('aria-selected','false');var p=document.getElementById(t.getAttribute('aria-controls'));if(p){p.classList.remove('tab-panel--active');p.hidden=true}});
+      tab.classList.add('tab--active');tab.setAttribute('aria-selected','true');var ap=document.getElementById(tab.getAttribute('aria-controls'));if(ap){ap.classList.add('tab-panel--active');ap.hidden=false}
+      setTimeout(checkReveal,50);
+    })});
+  });
+
+  // FAQ
+  document.querySelectorAll('.faq-q').forEach(function(btn){btn.addEventListener('click',function(){
+    var exp=btn.getAttribute('aria-expanded')==='true',ans=btn.closest('.faq-item').querySelector('.faq-a'),list=btn.closest('.faq-list');
+    if(list)list.querySelectorAll('.faq-q').forEach(function(ob){if(ob!==btn){ob.setAttribute('aria-expanded','false');var oa=ob.closest('.faq-item').querySelector('.faq-a');if(oa)oa.hidden=true}});
+    btn.setAttribute('aria-expanded',String(!exp));if(ans)ans.hidden=exp;
+  })});
+
+  // COVERAGE
+  var cs=document.getElementById('coverageSelect'),cr=document.getElementById('coverageResult');
+  if(cs&&cr)cs.addEventListener('change',function(){
+    var v=cs.value;cr.className='coverage-check__result';
+    if(!v){cr.classList.remove('is-visible');return}
+    cr.classList.add('is-visible');
+    if(v==='yes'){cr.classList.add('coverage-check__result--yes');cr.textContent='Great \u2014 you\'re in our active coverage area. We can fill shifts here.'}
+    else if(v==='partial'){cr.classList.add('coverage-check__result--partial');cr.textContent='We may be able to cover your area \u2014 submit a request and we\'ll confirm.'}
+    else{cr.classList.add('coverage-check__result--no');cr.textContent='We\'re not operating in this area yet, but register your interest and we\'ll notify you when we expand.'}
+  });
+
+  // FORMS
+  document.querySelectorAll('.form').forEach(function(form){
+    form.addEventListener('submit',function(e){
+      var ok=true;form.querySelectorAll('.is-invalid').forEach(function(el){el.classList.remove('is-invalid')});
+      form.querySelectorAll('[required]').forEach(function(f){
+        if(!f.value.trim()){f.classList.add('is-invalid');ok=false}
+        if(f.type==='email'&&f.value.trim()&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.value.trim())){f.classList.add('is-invalid');ok=false}
+        if(f.type==='tel'&&f.value.trim()&&f.value.replace(/\D/g,'').length<8){f.classList.add('is-invalid');ok=false}
+      });
+      if(!ok){e.preventDefault();var fi=form.querySelector('.is-invalid');if(fi){fi.focus();fi.scrollIntoView({behavior:'smooth',block:'center'})}return}
+      e.preventDefault();
+      var fd=new FormData(form),bp=[];fd.forEach(function(v,k){if(k!=='form-name'&&k!=='bot-field'&&v)bp.push(k+': '+v)});
+      var subj=encodeURIComponent('ShiftReady \u2014 '+(form.name||'Enquiry')),body=encodeURIComponent(bp.join('\n')),ml='mailto:hello@shiftready.com.au?subject='+subj+'&body='+body;
+      fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(fd).toString()})
+        .then(function(r){if(r.ok){showToast('Thanks \u2014 we\'ve received your submission and will be in touch soon.');form.reset()}else{window.location.href=ml}})
+        .catch(function(){window.location.href=ml});
+    });
+    form.querySelectorAll('input,select,textarea').forEach(function(f){f.addEventListener('input',function(){f.classList.remove('is-invalid')})});
+  });
+
+  // TOAST
+  var toast=document.getElementById('toast'),toastMsg=document.getElementById('toastMsg'),toastClose=toast?toast.querySelector('.toast__close'):null,tt;
+  function showToast(m){if(!toast||!toastMsg)return;toastMsg.textContent=m;toast.hidden=false;clearTimeout(tt);tt=setTimeout(function(){toast.hidden=true},6000)}
+  if(toastClose)toastClose.addEventListener('click',function(){toast.hidden=true;clearTimeout(tt)});
+
+  // MIN DATE
+  var df=document.getElementById('emp-date');
+  if(df){var tm=new Date();tm.setDate(tm.getDate()+1);df.setAttribute('min',tm.getFullYear()+'-'+String(tm.getMonth()+1).padStart(2,'0')+'-'+String(tm.getDate()).padStart(2,'0'))}
+
+  // SMOOTH SCROLL TAB ACTIVATION
+  document.querySelectorAll('a[href^="#"]').forEach(function(link){link.addEventListener('click',function(){
+    var tgt=document.querySelector(link.getAttribute('href'));
+    if(tgt){var panel=tgt.closest('.tab-panel');if(panel&&panel.hidden){var tid=panel.getAttribute('aria-labelledby');var tab=document.getElementById(tid);if(tab)tab.click()}}
+    if(mobileCta)mobileCta.classList.remove('is-visible');
+  })});
+})();
+  </script>
+</body>
+</html>
